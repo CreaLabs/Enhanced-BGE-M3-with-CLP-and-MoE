@@ -24,3 +24,23 @@ where:
 The difference between Contrastive Learning Loss and Contrastive Learning Penalty Loss:
 
 ![CLPL figure](./imgs/figure1.PNG)
+
+## Specs
+
+- Model
+
+| Model Name | Introduction |
+|---|---|
+| bge-m3-ko-CLPL-MoE | This model applies CLPL and MoE, trained on the MIRACL Korean training dataset |
+| bge-m3-fa-CLPL-MoE | This model applies CLPL and MoE, trained on the MIRACL Persian training dataset |
+| bge-m3-hi-CLPL-MoE | This model applies CLPL and MoE, trained on the MIRACL Hindi  training dataset |
+
+- Data
+  
+Performing negative sampling using the ANCE methodology and generating negative sample's positive queries through the Gemini 1.5 Pro model, which are required for CLPL.
+
+| Dataset | Introduction |
+|---|---|
+| [ko_CLPL_train_data](./data/ko_CLPL_train_data.jsonl) | MIRACL Korean CLPL training dataset |
+| [fa_CLPL_train_data](./data/fa_CLPL_train_data.jsonl) | MIRACL Persian CLPL training dataset |
+| [hi_CLPL_train_data](./data/hi_CLPL_train_data.jsonl) | MIRACL Hindi CLPL training dataset |
