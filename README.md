@@ -85,4 +85,6 @@ Execution:
        python step2-eval_dense_mldr.py --encoder CreaLabs/bge-m3-fa-CLPL-outputMoE --languages ko --search_result_save_dir ./search_results --qrels_dir ./qrels --eval_result_save_dir ./eval_results --metrics ndcg@5 ndcg@10 --pooling_method cls --normalize_embeddings True
 
 
+## Evaluation
 
+![Table 2](./imgs/table2.PNG)
