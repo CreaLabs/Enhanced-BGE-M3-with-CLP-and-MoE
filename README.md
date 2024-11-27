@@ -31,9 +31,9 @@ The difference between Contrastive Learning Loss and Contrastive Learning Penalt
 
 | Model Name | Introduction |
 |---|---|
-| bge-m3-ko-CLPL-MoE | This model applies CLPL and MoE, trained on the MIRACL Korean training dataset |
-| bge-m3-fa-CLPL-MoE | This model applies CLPL and MoE, trained on the MIRACL Persian training dataset |
-| bge-m3-hi-CLPL-MoE | This model applies CLPL and MoE, trained on the MIRACL Hindi  training dataset |
+| bge-m3-ko-CLPL-outputMoE | This model applies CLPL and MoE, trained on the MIRACL Korean training dataset. MoE is applied to the output layer, and only the MoE layers were trained during fine-tuning. |
+| bge-m3-fa-CLPL-outputMoE | This model applies CLPL and MoE, trained on the MIRACL Persian training dataset. MoE is applied to the output layer, and only the MoE layers were trained during fine-tuning. |
+| bge-m3-hi-CLPL-outputMoE | This model applies CLPL and MoE, trained on the MIRACL Hindi  training dataset. MoE is applied to the output layer, and only the MoE layers were trained during fine-tuning. |
 
 - Data
   
