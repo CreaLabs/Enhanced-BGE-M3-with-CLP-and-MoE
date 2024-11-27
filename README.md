@@ -88,3 +88,14 @@ Execution:
 ## Evaluation
 
 ![Table 2](./imgs/table2.PNG)
+
+## Citation
+
+    @misc{
+      title={Efficient Fine-tuning Methodology of Text Embedding Models for Information Retrieval: Contrastive Learning Penalty Loss (CLPL)}, 
+      author={Jeongsu YU},
+      year={2024},
+      eprint={},
+      archivePrefix={},
+      primaryClass={cs.CL}
+    }
