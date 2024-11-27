@@ -20,3 +20,7 @@ where:
 * sim(a, b): The cosine similarity function between embeddings a and b.
 * τ: The temperature parameter.
 * λ: The balancing parameter between the contrastive loss and the penalty term.
+
+The difference between Contrastive Learning Loss and Contrastive Learning Penalty Loss:
+
+![CLPL figure](./imgs/figure1.PNG)
