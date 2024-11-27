@@ -31,9 +31,9 @@ The difference between Contrastive Learning Loss and Contrastive Learning Penalt
 
 | Model Name | Introduction |
 |---|---|
-| bge-m3-ko-CLPL-outputMoE | This model applies CLPL and MoE, trained on the MIRACL Korean training dataset. MoE is applied to the output layer, and only the MoE layers were trained during fine-tuning. |
-| bge-m3-fa-CLPL-outputMoE | This model applies CLPL and MoE, trained on the MIRACL Persian training dataset. MoE is applied to the output layer, and only the MoE layers were trained during fine-tuning. |
-| bge-m3-hi-CLPL-outputMoE | This model applies CLPL and MoE, trained on the MIRACL Hindi  training dataset. MoE is applied to the output layer, and only the MoE layers were trained during fine-tuning. |
+| bge-m3-ko-CLPL-interMoE | This model applies CLPL and MoE, trained on the MIRACL Korean training dataset. MoE is applied to the intermediate layer, and only the MoE layers were trained during fine-tuning. |
+| bge-m3-fa-CLPL-interMoE | This model applies CLPL and MoE, trained on the MIRACL Persian training dataset. MoE is applied to the intermediate layer, and only the MoE layers were trained during fine-tuning. |
+| bge-m3-hi-CLPL-interMoE | This model applies CLPL and MoE, trained on the MIRACL Hindi  training dataset. MoE is applied to the intermediate layer, and only the MoE layers were trained during fine-tuning. |
 
 - Data
   
@@ -76,11 +76,11 @@ Execution:
 
 - train
 
-      python run.py --output_dir CreaLabs/bge-m3-fa-CLPL-outputMoE --model_name_or_path BAAI/bge-m3 --train_data ./train_data --learning_rate 1e-5 --fp16 y --num_train_epochs 2 --per_device_train_batch_size 1 --gradient_accumulation_steps 4 --dataloader_drop_last True --normlized True --temperature 0.02 --query_max_len 128 --passage_max_len 512 --train_group_size 5 --logging_steps 10 --same_task_within_batch True --unified_finetuning False --use_self_distill False --only_train output --moe output --num_experts 2 --num_experts_per_tok 1
+      python run.py --output_dir CreaLabs/bge-m3-fa-CLPL-outputMoE --model_name_or_path BAAI/bge-m3 --train_data ./train_data --learning_rate 1e-5 --fp16 y --num_train_epochs 2 --per_device_train_batch_size 1 --gradient_accumulation_steps 4 --dataloader_drop_last True --normlized True --temperature 0.02 --query_max_len 128 --passage_max_len 512 --train_group_size 5 --logging_steps 10 --same_task_within_batch True --unified_finetuning False --use_self_distill False --only_train intermediate --moe intermediate --num_experts 2 --num_experts_per_tok 1
 
 - evalution
 
-       python step0-generate_embedding.py --encoder CreaLabs/bge-m3-fa-CLPL-outputMoE --languages ko --index_save_dir ./corpus-index --max_passage_length 8192 --batch_size 4 --fp16 --pooling_method cls --normalize_embeddings True --moe output
+       python step0-generate_embedding.py --encoder CreaLabs/bge-m3-fa-CLPL-outputMoE --languages ko --index_save_dir ./corpus-index --max_passage_length 8192 --batch_size 4 --fp16 --pooling_method cls --normalize_embeddings True --moe intermediate
        python step1-search_results.py --encoder CreaLabs/bge-m3-fa-CLPL-outputMoE --languages ko fa hi --index_save_dir ./corpus-index --result_save_dir /data/js/search_results --threads 4 --hits 20 --pooling_method cls --normalize_embeddings True --add_instruction False --moe intermediate
        python step2-eval_dense_mldr.py --encoder CreaLabs/bge-m3-fa-CLPL-outputMoE --languages ko --search_result_save_dir ./search_results --qrels_dir ./qrels --eval_result_save_dir ./eval_results --metrics ndcg@5 ndcg@10 --pooling_method cls --normalize_embeddings True
 
