@@ -8,7 +8,7 @@ CLPL is a novel loss function designed to address the limitations of existing co
 
 The CLPL loss function is defined as follows:
 
-![CLPL formula](./imgs/clpl_formula.png)
+![CLPL formula](./imgs/clpl_formula.PNG)
 
 where:
 
