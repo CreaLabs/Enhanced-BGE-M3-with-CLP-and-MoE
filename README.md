@@ -8,7 +8,7 @@ CLPL is a novel loss function designed to address the limitations of existing co
 
 The CLPL loss function is defined as follows:
 
-![CLPL formula](./imgs/clpl_formula.PNG)
+![CLPL formula](https://github.com/Dream-Forge-Studios/Enhanced-BGE-M3-with-CLPL-and-MoE/blob/main/imgs/clpl_formula.PNG)
 
 where:
 
@@ -23,7 +23,7 @@ where:
 
 The difference between Contrastive Learning Loss and Contrastive Learning Penalty Loss:
 
-![CLPL figure](./imgs/figure1.PNG)
+![CLPL figure](https://github.com/Dream-Forge-Studios/Enhanced-BGE-M3-with-CLPL-and-MoE/blob/main/imgs/figure1.PNG)
 
 ## Specs
 
@@ -31,9 +31,9 @@ The difference between Contrastive Learning Loss and Contrastive Learning Penalt
 
 | Model Name | Introduction |
 |---|---|
-| bge-m3-ko-CLPL-interMoE | This model applies CLPL and MoE, trained on the MIRACL Korean training dataset. MoE is applied to the intermediate layer, and only the MoE layers were trained during fine-tuning. |
-| bge-m3-fa-CLPL-interMoE | This model applies CLPL and MoE, trained on the MIRACL Persian training dataset. MoE is applied to the intermediate layer, and only the MoE layers were trained during fine-tuning. |
-| bge-m3-hi-CLPL-interMoE | This model applies CLPL and MoE, trained on the MIRACL Hindi  training dataset. MoE is applied to the intermediate layer, and only the MoE layers were trained during fine-tuning. |
+| [bge-m3-ko-CLPL-interMoE](https://huggingface.co/CreaLabs/bge-m3-ko-CLPL-interMoE) | This model applies CLPL and MoE, trained on the MIRACL Korean training dataset. MoE is applied to the intermediate layer, and only the MoE layers were trained during fine-tuning. |
+| [bge-m3-fa-CLPL-interMoE](https://huggingface.co/CreaLabs/bge-m3-fa-CLPL-interMoE) | This model applies CLPL and MoE, trained on the MIRACL Persian training dataset. MoE is applied to the intermediate layer, and only the MoE layers were trained during fine-tuning. |
+| [bge-m3-hi-CLPL-interMoE](https://huggingface.co/CreaLabs/bge-m3-hi-CLPL-interMoE) | This model applies CLPL and MoE, trained on the MIRACL Hindi  training dataset. MoE is applied to the intermediate layer, and only the MoE layers were trained during fine-tuning. |
 
 - Data
   
@@ -41,9 +41,9 @@ Performing negative sampling using the ANCE methodology and generating negative 
 
 | Dataset | Introduction |
 |---|---|
-| [ko_CLPL_train_data](./data/ko_CLPL_train_data.jsonl) | MIRACL Korean CLPL training dataset |
-| [fa_CLPL_train_data](./data/fa_CLPL_train_data.jsonl) | MIRACL Persian CLPL training dataset |
-| [hi_CLPL_train_data](./data/hi_CLPL_train_data.jsonl) | MIRACL Hindi CLPL training dataset |
+| [ko_CLPL_train_data](https://github.com/Dream-Forge-Studios/Enhanced-BGE-M3-with-CLPL-and-MoE/blob/main/data/ko_CLPL_train_data.jsonl) | MIRACL Korean CLPL training dataset |
+| [fa_CLPL_train_data](https://github.com/Dream-Forge-Studios/Enhanced-BGE-M3-with-CLPL-and-MoE/blob/main/data/fa_CLPL_train_data.jsonl) | MIRACL Persian CLPL training dataset |
+| [hi_CLPL_train_data](https://github.com/Dream-Forge-Studios/Enhanced-BGE-M3-with-CLPL-and-MoE/blob/main/data/hi_CLPL_train_data.jsonl) | MIRACL Hindi CLPL training dataset |
 
 ## Usage
 
@@ -87,7 +87,7 @@ Execution:
 
 ## Evaluation
 
-![Table 2](./imgs/table2.PNG)
+![Table 2](https://github.com/Dream-Forge-Studios/Enhanced-BGE-M3-with-CLPL-and-MoE/blob/main/imgs/table2.PNG)
 
 ## Citation
 
