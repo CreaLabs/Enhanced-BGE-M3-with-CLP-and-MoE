@@ -23,7 +23,7 @@ where:
 
 The difference between Contrastive Learning Loss and Contrastive Learning Penalty Loss:
 
-![CLP figure](https://github.com/Dream-Forge-Studios/Enhanced-BGE-M3-with-CLP-and-MoE/blob/main/imgs/figure1.PNG)
+![CLP figure](https://github.com/CreaLabs/Enhanced-BGE-M3-with-CLP-and-MoE/blob/main/imgs/figure1.PNG)
 
 ## Specs
 
@@ -41,9 +41,9 @@ Performing negative sampling using the ANCE methodology and generating negative 
 
 | Dataset | Introduction |
 |---|---|
-| [ko_CLPL_train_data](https://github.com/Dream-Forge-Studios/Enhanced-BGE-M3-with-CLP-and-MoE/blob/main/data/ko_CLP_train_data.jsonl) | MIRACL Korean CLPL training dataset |
-| [fa_CLPL_train_data](https://github.com/Dream-Forge-Studios/Enhanced-BGE-M3-with-CLP-and-MoE/blob/main/data/fa_CLP_train_data.jsonl) | MIRACL Persian CLPL training dataset |
-| [hi_CLPL_train_data](https://github.com/Dream-Forge-Studios/Enhanced-BGE-M3-with-CLP-and-MoE/blob/main/data/hi_CLP_train_data.jsonl) | MIRACL Hindi CLPL training dataset |
+| [ko_CLPL_train_data](https://github.com/CreaLabs/Enhanced-BGE-M3-with-CLP-and-MoE/blob/main/data/ko_CLP_train_data.jsonl) | MIRACL Korean CLPL training dataset |
+| [fa_CLPL_train_data](https://github.com/CreaLabs/Enhanced-BGE-M3-with-CLP-and-MoE/blob/main/data/fa_CLP_train_data.jsonl) | MIRACL Persian CLPL training dataset |
+| [hi_CLPL_train_data](https://github.com/CreaLabs/Enhanced-BGE-M3-with-CLP-and-MoE/blob/main/data/hi_CLP_train_data.jsonl) | MIRACL Hindi CLPL training dataset |
 
 ## Usage
 
@@ -87,7 +87,7 @@ Execution:
 
 ## Evaluation
 
-![Table 2](https://github.com/Dream-Forge-Studios/Enhanced-BGE-M3-with-CLP-and-MoE/blob/main/imgs/table2.PNG)
+![Table 2](https://github.com/CreaLabs/Enhanced-BGE-M3-with-CLP-and-MoE/blob/main/imgs/table2.PNG)
 
 ## Citation
 
