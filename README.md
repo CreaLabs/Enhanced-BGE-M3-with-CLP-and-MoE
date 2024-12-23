@@ -8,7 +8,7 @@ CLP is a novel loss function designed to address the limitations of existing con
 
 The CLP loss function is defined as follows:
 
-![CLPL formula](https://github.com/Dream-Forge-Studios/Enhanced-BGE-M3-with-CLP-and-MoE/blob/main/imgs/clpl_formula.PNG)
+![CLPL formula](https://github.com/CreaLabs/Enhanced-BGE-M3-with-CLP-and-MoE/blob/main/imgs/clpl_formula.PNG)
 
 where:
 
