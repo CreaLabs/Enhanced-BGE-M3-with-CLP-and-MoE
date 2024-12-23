@@ -1,14 +1,14 @@
-# Enhanced-BGE-M3-with-CLPL-and-MoE
+# Enhanced-BGE-M3-with-CLP-and-MoE
 
-This repository provides the code for applying Contrastive Learning Penalty Loss (CLPL) and Mixture of Experts (MoE) to the BGE-M3 text embedding model for enhanced information retrieval performance.
+This repository provides the code for applying Contrastive Learning Penalty (CLP) and Mixture of Experts (MoE) to the BGE-M3 text embedding model for enhanced information retrieval performance.
 
-## Contrastive Learning Penalty Loss (CLPL)
+## Contrastive Learning Penalty (CLP)
 
-CLPL is a novel loss function designed to address the limitations of existing contrastive learning methods for improved performance in information retrieval tasks. It incorporates a penalty term that encourages the model to learn more discriminative representations by considering the similarity between negative samples and their corresponding queries.
+CLP is a novel loss function designed to address the limitations of existing contrastive learning methods for improved performance in information retrieval tasks. It incorporates a penalty term that encourages the model to learn more discriminative representations by considering the similarity between negative samples and their corresponding queries.
 
-The CLPL loss function is defined as follows:
+The CLP loss function is defined as follows:
 
-![CLPL formula](https://github.com/Dream-Forge-Studios/Enhanced-BGE-M3-with-CLPL-and-MoE/blob/main/imgs/clpl_formula.PNG)
+![CLPL formula](https://github.com/Dream-Forge-Studios/Enhanced-BGE-M3-with-CLP-and-MoE/blob/main/imgs/clpl_formula.PNG)
 
 where:
 
@@ -23,7 +23,7 @@ where:
 
 The difference between Contrastive Learning Loss and Contrastive Learning Penalty Loss:
 
-![CLPL figure](https://github.com/Dream-Forge-Studios/Enhanced-BGE-M3-with-CLPL-and-MoE/blob/main/imgs/figure1.PNG)
+![CLP figure](https://github.com/Dream-Forge-Studios/Enhanced-BGE-M3-with-CLP-and-MoE/blob/main/imgs/figure1.PNG)
 
 ## Specs
 
@@ -31,9 +31,9 @@ The difference between Contrastive Learning Loss and Contrastive Learning Penalt
 
 | Model Name | Introduction |
 |---|---|
-| [bge-m3-ko-CLPL-interMoE](https://huggingface.co/CreaLabs/bge-m3-ko-CLPL-interMoE) | This model applies CLPL and MoE, trained on the MIRACL Korean training dataset. MoE is applied to the intermediate layer, and only the MoE layers were trained during fine-tuning. |
-| [bge-m3-fa-CLPL-interMoE](https://huggingface.co/CreaLabs/bge-m3-fa-CLPL-interMoE) | This model applies CLPL and MoE, trained on the MIRACL Persian training dataset. MoE is applied to the intermediate layer, and only the MoE layers were trained during fine-tuning. |
-| [bge-m3-hi-CLPL-interMoE](https://huggingface.co/CreaLabs/bge-m3-hi-CLPL-interMoE) | This model applies CLPL and MoE, trained on the MIRACL Hindi  training dataset. MoE is applied to the intermediate layer, and only the MoE layers were trained during fine-tuning. |
+| [bge-m3-ko-CLPL-interMoE](https://huggingface.co/CreaLabs/bge-m3-ko-CLP-interMoE) | This model applies CLPL and MoE, trained on the MIRACL Korean training dataset. MoE is applied to the intermediate layer, and only the MoE layers were trained during fine-tuning. |
+| [bge-m3-fa-CLPL-interMoE](https://huggingface.co/CreaLabs/bge-m3-fa-CLP-interMoE) | This model applies CLPL and MoE, trained on the MIRACL Persian training dataset. MoE is applied to the intermediate layer, and only the MoE layers were trained during fine-tuning. |
+| [bge-m3-hi-CLPL-interMoE](https://huggingface.co/CreaLabs/bge-m3-hi-CLP-interMoE) | This model applies CLPL and MoE, trained on the MIRACL Hindi  training dataset. MoE is applied to the intermediate layer, and only the MoE layers were trained during fine-tuning. |
 
 - Data
   
@@ -41,9 +41,9 @@ Performing negative sampling using the ANCE methodology and generating negative 
 
 | Dataset | Introduction |
 |---|---|
-| [ko_CLPL_train_data](https://github.com/Dream-Forge-Studios/Enhanced-BGE-M3-with-CLPL-and-MoE/blob/main/data/ko_CLPL_train_data.jsonl) | MIRACL Korean CLPL training dataset |
-| [fa_CLPL_train_data](https://github.com/Dream-Forge-Studios/Enhanced-BGE-M3-with-CLPL-and-MoE/blob/main/data/fa_CLPL_train_data.jsonl) | MIRACL Persian CLPL training dataset |
-| [hi_CLPL_train_data](https://github.com/Dream-Forge-Studios/Enhanced-BGE-M3-with-CLPL-and-MoE/blob/main/data/hi_CLPL_train_data.jsonl) | MIRACL Hindi CLPL training dataset |
+| [ko_CLPL_train_data](https://github.com/Dream-Forge-Studios/Enhanced-BGE-M3-with-CLP-and-MoE/blob/main/data/ko_CLP_train_data.jsonl) | MIRACL Korean CLPL training dataset |
+| [fa_CLPL_train_data](https://github.com/Dream-Forge-Studios/Enhanced-BGE-M3-with-CLP-and-MoE/blob/main/data/fa_CLP_train_data.jsonl) | MIRACL Persian CLPL training dataset |
+| [hi_CLPL_train_data](https://github.com/Dream-Forge-Studios/Enhanced-BGE-M3-with-CLP-and-MoE/blob/main/data/hi_CLP_train_data.jsonl) | MIRACL Hindi CLPL training dataset |
 
 ## Usage
 
@@ -87,7 +87,7 @@ Execution:
 
 ## Evaluation
 
-![Table 2](https://github.com/Dream-Forge-Studios/Enhanced-BGE-M3-with-CLPL-and-MoE/blob/main/imgs/table2.PNG)
+![Table 2](https://github.com/Dream-Forge-Studios/Enhanced-BGE-M3-with-CLP-and-MoE/blob/main/imgs/table2.PNG)
 
 ## Citation
 
