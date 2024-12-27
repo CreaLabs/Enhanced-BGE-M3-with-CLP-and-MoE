@@ -41,9 +41,9 @@ Performing negative sampling using the ANCE methodology and generating negative 
 
 | Dataset | Introduction |
 |---|---|
-| [ko_CLPL_train_data](https://github.com/CreaLabs/Enhanced-BGE-M3-with-CLP-and-MoE/blob/main/data/ko_CLP_train_data.jsonl) | MIRACL Korean CLPL training dataset |
+| [ko_CLPL_train_data](https://github.com/CreaLabs/Enhanced-BGE-M3-with-CLP-and-MoE/blob/main/data/ko_CLPL_train_data.jsonl) | MIRACL Korean CLPL training dataset |
 | [fa_CLPL_train_data](https://github.com/CreaLabs/Enhanced-BGE-M3-with-CLP-and-MoE/blob/main/data/fa_CLPL_train_data.jsonl) | MIRACL Persian CLPL training dataset |
-| [hi_CLPL_train_data](https://github.com/CreaLabs/Enhanced-BGE-M3-with-CLP-and-MoE/blob/main/data/hi_CLP_train_data.jsonl) | MIRACL Hindi CLPL training dataset |
+| [hi_CLPL_train_data](https://github.com/CreaLabs/Enhanced-BGE-M3-with-CLP-and-MoE/blob/main/data/hi_CLPL_train_data.jsonl) | MIRACL Hindi CLPL training dataset |
 
 ## Usage
 
