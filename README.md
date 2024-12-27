@@ -1,4 +1,4 @@
-# Enhanced-BGE-M3-with-CLP-and-MoE
+# Enhanced-BGE-M3-with-CLP-and-MoE ([paper](https://arxiv.org/abs/2412.17364))
 
 This repository provides the code for applying Contrastive Learning Penalty (CLP) and Mixture of Experts (MoE) to the BGE-M3 text embedding model for enhanced information retrieval performance.
 
@@ -87,15 +87,16 @@ Execution:
 
 ## Evaluation
 
-![Table 2](https://github.com/CreaLabs/Enhanced-BGE-M3-with-CLP-and-MoE/blob/main/imgs/table2.PNG)
+![Table 2](https://github.com/CreaLabs/Enhanced-BGE-M3-with-CLP-and-MoE/blob/main/imgs/table4.PNG)
 
 ## Citation
 
-    @misc{
-      title={Efficient Fine-tuning Methodology of Text Embedding Models for Information Retrieval: Contrastive Learning Penalty Loss (CLPL)}, 
-      author={Jeongsu YU},
+    @misc{yu2024efficientfinetuningmethodologytext,
+      title={Efficient fine-tuning methodology of text embedding models for information retrieval: contrastive learning penalty (clp)}, 
+      author={Jeongsu Yu},
       year={2024},
-      eprint={},
-      archivePrefix={},
-      primaryClass={cs.CL}
+      eprint={2412.17364},
+      archivePrefix={arXiv},
+      primaryClass={cs.IR},
+      url={https://arxiv.org/abs/2412.17364}, 
     }
